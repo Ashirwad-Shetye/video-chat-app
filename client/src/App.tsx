@@ -1,10 +1,15 @@
+import { Routes, Route } from "react-router-dom";
+import VideoCall from "./pages/videoCall/VideoCall";
+import Lobby from "./pages/lobby/Lobby";
+
 function App() {
   return (
-    <>
-      <h1 className="text-3xl text-red-400 font-bold underline">
-        Hello world!
-      </h1>
-    </>
+    <div>
+      <Routes>
+        <Route path="/" element={<Lobby />} />
+        <Route path="/videoCall" element={<VideoCall />} />
+      </Routes>
+    </div>
   );
 }
 
