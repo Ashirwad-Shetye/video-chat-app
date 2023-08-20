@@ -1,4 +1,4 @@
-import cn from "../../../utils/clsx";
+import { cn } from "../../../utils/helper";
 import { skeletonVariants } from "./skeleton-variants";
 
 export interface SkeletonProps {

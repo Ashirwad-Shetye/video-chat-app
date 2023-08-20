@@ -1,5 +1,5 @@
 import React from "react";
-import cn from "../../../utils/clsx";
+import { cn } from "../../../utils/helper";
 import { VariantProps } from "class-variance-authority";
 
 import { buttonVariants } from "./button-variants";

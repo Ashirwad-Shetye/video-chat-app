@@ -1,13 +1,15 @@
 import { Routes, Route } from "react-router-dom";
-import VideoCall from "./pages/videoCall/VideoCall";
+import MeetingRoom from "./pages/meetingRoom/MeetingRoom";
 import Lobby from "./pages/lobby/Lobby";
+import Home from "./pages/home/Home";
 
 function App() {
   return (
-    <div>
+    <div className="font-poppins">
       <Routes>
-        <Route path="/" element={<Lobby />} />
-        <Route path="/videoCall" element={<VideoCall />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/lobby" element={<Lobby />} />
+        <Route path="/call/:callId" element={<MeetingRoom />} />
       </Routes>
     </div>
   );
